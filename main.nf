@@ -14,5 +14,5 @@ process CRAWL_ACGT {
 
 workflow { 
 chromosome_ch = Channel.of('/mnt/shared/MedGen/Palecek_HiC/Palecek_final/Palecek-MicroC-1/Palecek-microC-1_0.mcool')
- CRAWL_ACGT() 
+ CRAWL_ACGT(chromosome_ch) 
 }
